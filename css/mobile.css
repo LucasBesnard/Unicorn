@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans&display=swap');
+
+:root {
+    --black: #181818;
+    --white: #ffffff;
+    --gray: #eeeeee;
+    --gray-light: #fbfbfb;
+    --font-body: 'PT Sans', sans-serif;
+    --font-title: 'Libre Baskerville', serif;
+}
+
+/* Header  */
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/**
+ * Barre de navigation
+ */
+header nav {
+    padding: 10px 0;
+}
+
+header nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Cache le menu de navigation pour ordinateur */
+header nav ul {
+    display: none;
+}
+
+.menu-icon {
+    width: 32px;
+}
+
+header section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+header section p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+
+.img-licorn {
+    width: 300px;
+}
+
+/* Page centrale */
+
+.cards .circle {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cards .circle img {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+display: block;
+justify-content: space-between;
+padding: 15px;
+margin: auto
+}
+
+
+.cards p {
+    margin-bottom: 20px;
+}
+
+.btn-light{
+    text-decoration: none;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    display: block;
+    justify-content: space-between;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    margin: auto
+}
+.btn-black {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: block;
+    justify-content: space-between;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+}
+
+/**
+ * Footer
+ */
+footer {
+    padding: 50px 0 30px 0;
+}
+
+/* Donne une taille relative à l'image selon la largeur de l'écran */
+footer img {
+    width: 10%;
+}
