@@ -1,119 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans&display=swap');
-
-:root {
-    --black: #181818;
-    --white: #ffffff;
-    --gray: #eeeeee;
-    --gray-light: #fbfbfb;
-    --font-body: 'PT Sans', sans-serif;
-    --font-title: 'Libre Baskerville', serif;
-}
-
-/* Header  */
-.container {
-    width: 100%;
-    margin: auto;
-}
-
-/**
- * Barre de navigation
+/*
+ * Importation des polices de caractères
+ * https://fonts.google.com/
  */
-header nav {
-    padding: 10px 0;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
 
-header nav div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Cache le menu de navigation pour ordinateur */
-header nav ul {
-    display: none;
-}
-
-.menu-icon {
-    width: 32px;
-}
-
-header section {
-    text-align: center;
-    padding: 50px 0;
-}
-
-header section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    font-weight: bold;
-}
-
-header section p {
-    font-size: 1.2rem;
-    margin-bottom: 50px;
-    font-weight: normal;
-}
-
-.img-licorn {
-    width: 300px;
-}
-
-/* Page centrale */
-
-.cards .circle {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.cards .circle img {
-    width: 400px;
-    height: 500px;
-    border-radius: 10px;
-display: block;
-justify-content: space-between;
-padding: 15px;
-margin: auto
-}
-
-
-.cards p {
-    margin-bottom: 20px;
-}
-
-.btn-light{
-    text-decoration: none;
-    color: var(--black);
-    border: 1px solid var(--black);
-    border-radius: 4px;
-    display: block;
-    justify-content: space-between;
-    width: 300px;
-    text-align: center;
-    padding: 15px;
-    margin: auto
-}
-.btn-black {
-    text-decoration: none;
-    color: var(--white);
-    background-color: var(--black);
-    padding: 8px 12px;
-    border-radius: 4px;
-    display: block;
-    justify-content: space-between;
-    width: 300px;
-    text-align: center;
-    padding: 15px;
-    margin: auto;
-}
-
-/**
- * Footer
+ /* Configuration des variables */
+ :root {
+     --black: #181818;
+     --white: #ffffff;
+     --gray: #eeeeee;
+     --gray-light: #fbfbfb;
+     --font-body: 'PT Sans', sans-serif;
+     --font-title: 'Libre Baskerville', serif;
+ }
+ 
+ /* Retrait des marges sur tous les éléments */
+ * {
+     margin: 0;
+ }
+ 
+ /* Configuration du document */
+ body {
+     font-family: var(--font-body);
+     font-size: 16px;
+     background-color: var(--gray-light);
+ }
+ 
+ /*
+  * Configuration de la police de caractère par défaut pour les balises "heading"
+  */
+ h1, h2, h3, h4, h5, h6 {
+     font-family: var(--font-title);
+ }
+ 
+ /* Élément permettant de centrer d'autres éléments sur la page */
+ .container {
+     width: 90%;
+     margin: auto;
+ }
+ 
+ /**
+ *Navigation
  */
-footer {
-    padding: 50px 0 30px 0;
-}
-
-/* Donne une taille relative à l'image selon la largeur de l'écran */
-footer img {
-    width: 10%;
-}
+ 
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 0;
+ }
+ 
+ .menu-desktop {
+     display: none;
+ }
+ 
+ /**
+ * Header
+ */
+ 
+ header {
+     text-align: center;
+     padding: 100px 0;
+ }
+ 
+ header h1 {
+     font-size: 2rem;
+ }
+ 
+ header p {
+     font-size: 1.2rem;
+     margin-top: 20px;
+ }
+ 
+ header img {
+     width: 80%;
+     margin: 100px auto;
+ }
+ 
+ /* Partie principal  */
+ .card-project {
+     margin: 50px auto;
+ }
+ 
+ .card-project img {
+     width: 100%;
+     height: 560px;
+     border-radius: 5px;
+     object-fit: cover;
+ }
+ 
+ .btn-light {
+     text-decoration: none;
+     color: var(--black);
+     text-align: center;
+     border: 1px solid var(--black);
+     border-radius: 3px;
+     padding: 12px 28px;
+     display: block;
+ }
+ 
+ /**
+ * Newsletter
+ */
+ .newsletter {
+     background-color: var(--gray);
+     padding: 20px;
+     margin-top: 80px;
+ }
+ 
+ .newsletter img {
+     width: 100%;
+ }
+ 
+ .newsletter h2 {
+     font-size: 2rem;
+     margin: 50px 0;
+     width: 70%;
+ }
+ 
+ .btn-black {
+     text-decoration: none;
+     background-color: var(--black);
+     color: var(--white);
+     text-align: center;
+     border-radius: 3px;
+     padding: 12px 28px;
+     display: block;
+ }
+ 
+ footer {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 10px;
+     margin-top: 50px;
+ }
+ 
+ footer a {
+     border: 1px solid var(--gray);
+     border-radius: 3px;
+     padding: 12px;
+     text-align: center;
+ }
+ 
+ footer a svg {
+     width: 24px; /* Enlever les height et with dans le HTML si vous utiliser la priorite */
+     color: var(--black);
+ }

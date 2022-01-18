@@ -1,0 +1,93 @@
+/**
+* Activation de cette feuille css si l'écran fait au minimum 1200px
+*/
+@media screen and (min-width: 1200px) {
+
+    /* Cacher le menu burger */
+    .menu-mobile {
+        display: none;
+    }
+
+    /* Afficher le menu en liens hypertexte */
+    .menu-desktop {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        list-style: none;
+    }
+
+    .menu-desktop li a {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header p {
+        font-size: 1.4rem;
+    }
+
+    header img {
+        width: 40%;
+        margin: 150px auto;
+    }
+
+    /* Card Project  */
+    .card-project {
+        position: relative;
+    }
+
+    .card-project p {
+        font-size: 1.2rem;
+        position: absolute;
+        width: 25%;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .btn-light {
+        display: none;
+    }
+
+    /**
+    *Newsletter
+    */
+    .newsletter {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        /* Inverse l'ordre d'affichage */
+        padding: 50px;
+    }
+
+    .newsletter h2 {
+        font-size: 3rem;
+    }
+
+    .btn-dark {
+        display: inline;
+        /*Redonne la taille initial de l'élément Html "a" */
+    }
+
+    .newsletter img {
+        width: 50%;
+    }
+
+    /**
+    *Footer
+    */
+    footer {
+        display: flex;
+        justify-content: right;
+    }
+
+    footer a {
+        border: none;
+    }
+}
